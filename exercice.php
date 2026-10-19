@@ -3,8 +3,11 @@ $notes = ["Mohamed" => 14, "Sami" => 9, "Amel" => 17, "Yassine" => 8, "Ines" => 
 foreach ($notes as $cle => $valuer) {
     echo"$cle : $valuer<br>";
 }
-
-$somme= array_sum($notes)/count($notes);
+function Moyenne(array $tab):float
+{
+    return array_sum($tab)/count($tab);
+}
+$somme= Moyenne($notes);
 echo" <h3>la somme : $somme</h3>";
 
 $tabDobNotes= array_filter($notes,fn($valuer) => $valuer>=10);//tfalter eli hachtekk bihh
@@ -25,3 +28,4 @@ echo"<h3>plus un a toutes les notes de etudiants:</h3><br>";
 print_r($double);
 echo"</pre>";
 ?>
+
