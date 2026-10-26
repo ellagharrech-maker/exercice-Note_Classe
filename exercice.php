@@ -28,4 +28,3 @@ echo"<h3>plus un a toutes les notes de etudiants:</h3><br>";
 print_r($double);
 echo"</pre>";
 ?>
-
